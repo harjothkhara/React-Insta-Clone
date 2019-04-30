@@ -1,28 +1,15 @@
 import React from 'react';
+import './PostContainer.css';
 import CommentSection from '../CommentSection/CommentSection';
+import Post from './Post';
 
 const PostContainer = props => {
-    console.log(props);
-    return (
-       <div class = "postContainer"> 
-            {/* { {props.posts.map((post) => (
-                <Post post={post} />
-            ))} } */}
-
-
-
-            <div class = "postContent">
-                <p>{props.post.username}</p>
-            </div>
-
-          <div class = "commentContainer">
-
-          <CommentSection />
-
-          </div>
-
-      </div>
-    ) 
+  return (
+    <div>
+      <Post />
+      <CommentSection comments={props.data.comments} />
+    </div>
+  )
 }
 
 export default PostContainer;
