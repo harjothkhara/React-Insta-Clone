@@ -3,8 +3,11 @@ import './CommentSection.css';
 import Comment from './Comment'
 
 const CommentSection = props => {
-  return (
-    <p>I love this so much!</p>
+    console.log(props)
+  return ( 
+    // <p>I love this so much!</p>
+    // <Comment />
+    null
   )
 }
 
