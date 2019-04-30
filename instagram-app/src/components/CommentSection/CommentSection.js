@@ -7,7 +7,12 @@ const CommentSection = props => {
   return ( 
     // <p>I love this so much!</p>
     // <Comment />
-    null
+
+    // CommentsSection amd Comments replicating 
+    // accross posts
+    props.comments.map((item, index) => 
+    <Comment key={index} info={item} />
+    )
   )
 }
 
