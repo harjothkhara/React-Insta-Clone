@@ -2,15 +2,15 @@
     width: 604px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   .post {
     height: 924px;
-    border: 1px solid grey;
+    border: 1px solid #ebe7e7;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
   } 
   
   .thumbnail {
@@ -20,13 +20,35 @@
   }
   
   .post-header {
-    width: 124px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-left: 16px;
+    padding: 18px 0;
   }
   
   .post-img {
     max-width: 603px;
+  }
+
+  .post-footer {
+    height: 28%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow:1;
+    align-content: flex-start;
+    margin-left: 16px;
+
+  }
+
+  .post-footer h3, h4, p, form {
+    padding-top: 14px;
+  }
+
+  .post form {
+    margin: 0px 0px 20px 16px;
+  }
+
+  .post form input {
+    font-size: 1.6rem;
+    font-weight: bold;
   }
