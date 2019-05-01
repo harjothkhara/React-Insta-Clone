@@ -3,18 +3,58 @@ import './CommentSection.css';
 import Comment from './Comment';
 import PropTypes from 'prop-types';
 
-const CommentSection = props => {
-    console.log(props)
-  return ( 
-    // <p>I love this so much!</p>
-    // <Comment />
+class CommentSection extends React.Component {
+    constructor (props) {
+        super()
+        this.props = props;
+        this.state = {
+            comments: this.props.comments,
+            timestamp: this.props.timestamp,
+            text: ''
+        }
+    }
 
-    // CommentsSection amd Comments replicating 
-    // accross posts
-    props.comments.map((item, index) => 
-    <Comment key={index} info={item} />
-    )
-  )
+    handleChanges =  event => {
+        console.log(this.state)
+        this.setState({
+            [event.target.name] : event.target.value
+        })
+    }
+
+    addNewComment = (event, item) => {
+        event.preventDefault();
+
+        const newComment = {
+            username: 'Christopher Robin',
+            text: this.state.text
+        }
+
+        this.setState({
+            comments: [...this.state.comments, newComment],
+            timestamp: this.state.timestamp
+        })
+    }
+
+  
+   render () {
+    return (
+       <div>
+        {this.state.comments.map((item, index) => 
+        <Comment key={index} info={item} /> )}
+        <p>{this.state.timestamp}</p>
+        <form onSubmit={this.addNewComment}>
+            <input 
+            name="text"
+            type="text"
+            value={this.state.text}
+            onChange={this.handleChanges}
+            placeholder = "Add a comment...">
+            </input>
+        </form>
+       </div> 
+      )
+   } 
+    
 }
 
 CommentSection.propTypes = {

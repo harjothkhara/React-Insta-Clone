@@ -6,7 +6,6 @@
   }
 
   .post {
-    height: 924px;
     border: 1px solid #ebe7e7;
     border-radius: 4px;
     display: flex;
@@ -25,9 +24,13 @@
     margin-left: 16px;
     padding: 18px 0;
   }
+
+  .post-header h2 {
+    margin-left: 9px;
+  }
   
   .post-img {
-    max-width: 603px;
+    max-width: 600px;
   }
 
   .post-footer {
@@ -40,12 +43,16 @@
 
   }
 
+  .post-footer h3 {
+    width: 100%;
+  }
+
   .post-footer h3, h4, p, form {
     padding-top: 14px;
   }
 
   .post form {
-    margin: 0px 0px 20px 16px;
+    margin-bottom: 20px;
   }
 
   .post form input {

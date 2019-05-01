@@ -2,6 +2,7 @@ import React from 'react';
 import './PostContainer.css';
 import CommentSection from '../CommentSection/CommentSection';
 import Proptypes from 'prop-types';
+import './PostContainer.css';
 
 const Post = props => {
   console.log(props)
@@ -16,13 +17,8 @@ const Post = props => {
       
      <div className="post-footer">
         <h3>{props.data.likes} likes</h3>
-        <CommentSection comments={props.data.comments} />
-        <p>{props.data.timestamp}</p>
+        <CommentSection comments={props.data.comments} timestamp={props.data.timestamp} />
       </div>
-      <form>
-        <input placeholder ="Add a comment...">
-        </input>
-      </form>
   </div>    
   )
 }
