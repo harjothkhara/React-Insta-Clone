@@ -9,7 +9,7 @@ const PostContainer = props => {
     <div className="post-container">
         {/* creates new posts for each object within data array. */}
       {props.data.map((item, index) => 
-      <Post data={props.data[index]} key={index} />
+      <Post data={props.data[index]} key={props.data[index].timestamp} />
       )}
     </div>
   )

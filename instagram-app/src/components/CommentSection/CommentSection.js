@@ -5,11 +5,11 @@ import PropTypes from 'prop-types';
 
 class CommentSection extends React.Component {
     constructor (props) {
-        super()
+        super(props)
         this.props = props;
         this.state = {
-            comments: this.props.comments,
-            timestamp: this.props.timestamp,
+            comments: props.comments,
+            timestamp: props.timestamp,
             text: ''
         }
     }
@@ -17,7 +17,7 @@ class CommentSection extends React.Component {
     handleChanges =  event => {
         console.log(this.state)
         this.setState({
-            [event.target.name] : event.target.value
+            text: event.target.value
         })
     }
 
@@ -44,7 +44,6 @@ class CommentSection extends React.Component {
         <p>{this.state.timestamp}</p>
         <form onSubmit={this.addNewComment}>
             <input 
-            name="text"
             type="text"
             value={this.state.text}
             onChange={this.handleChanges}
