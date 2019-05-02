@@ -25,7 +25,7 @@ class CommentSection extends React.Component {
         event.preventDefault();
 
         const newComment = {
-            username: 'Christopher Robin',
+            username: 'harjoth',
             text: this.state.text
         }
 
@@ -38,10 +38,10 @@ class CommentSection extends React.Component {
   
    render () {
     return (
-       <div>
+       <div className = "comments">
         {this.state.comments.map((item, index) => 
         <Comment key={index} info={item} /> )}
-        <p>{this.state.timestamp}</p>
+        <p className = "timestamp">{this.state.timestamp}</p>
         <form onSubmit={this.addNewComment}>
             <input 
             type="text"
