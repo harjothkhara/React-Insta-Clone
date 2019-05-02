@@ -31,14 +31,15 @@ class Login extends React.Component {
                 <form onSubmit={this.signIn}>
                 <h3>Username</h3> 
                     <input type="text" value={this.state.userText} name="userText" 
-                    onChange={this.handleChanges}>
+                    onChange={this.handleChanges} placeholder="Username">
                     </input>
                 <h3>Password</h3>
                     <input type="text" value={this.state.passText} name="passText"
-                    onChange={this.handleChanges}>
+                    onChange={this.handleChanges} placeholder="Password">
                     </input>
                     <button>Sign In</button>
-                </form>       
+                </form>
+                <h3>Forgot Password</h3>       
             </div>
         )
 
