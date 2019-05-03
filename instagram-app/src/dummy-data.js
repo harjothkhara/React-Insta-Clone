@@ -77,7 +77,32 @@ const dummyData = [
         text: "I like how Half Dome looks so old and useless"
       }
     ]
-  }
+  },
+  {
+    username: "Christopher Robin",
+    thumbnailUrl:
+      "https://storage.googleapis.com/afs-prod/media/media:b4da4f149f4a4412a1fcd0c55495f9ed/800.jpeg",
+
+    imageUrl:
+      "https://greatergood.berkeley.edu/images/uploads/Forest_in_Japan.jpg",
+    likes: 50000,
+    timestamp: "May 4th 2018, 6:43:21 pm",
+    comments: [
+      {
+        username: "Tigger",
+        text:
+          "hoo-hoo-hoo-hoo-oo-oo-oo!"
+      },
+      {
+        username: "Piglet",
+        text: "Oh, d-d-d-dear! I musn’t f-f-f-fear!!"
+      },
+      {
+        username: "theRealEeyore",
+        text: "Thanks for noticin' me"
+      }
+    ]
+  },
 ];
 
 export default dummyData;
