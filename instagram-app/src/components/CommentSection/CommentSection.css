@@ -1,8 +1,8 @@
-.comment {
+/* .comment {
     display:flex;
     flex-wrap: wrap;
     width: 100%;
-}
+} */
 
 .comment p {
     margin-left: 4px;

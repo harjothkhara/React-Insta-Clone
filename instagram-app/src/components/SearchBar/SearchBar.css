@@ -1,4 +1,4 @@
-.searchbar {
+/* .searchbar {
     margin: 0 auto;
     margin-top: 20px;
     width: 1400px;
@@ -6,8 +6,8 @@
     justify-content: space-between;
     border-bottom: 1px solid #efefef;
     padding-bottom: 20px;
-  }
-
+  } */
+/* 
   .searchbar input {
     width: 250px;
     height: 32px;
@@ -17,17 +17,17 @@
     border-radius: 3px;
     padding: 4px 6px;
     font-size: 1.6rem;
-}
+} */
 
-  .searchbar img {
+  /* .searchbar img {
     height: 40px;
     margin: 0 20px;
-  }
-
+  } */
+/* 
   .searchbarimg {
     display: flex;
   }
 
   .searchbarlogos {
     margin: 0 90px;
-  }
+  } */

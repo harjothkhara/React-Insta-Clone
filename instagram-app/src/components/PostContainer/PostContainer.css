@@ -1,9 +1,9 @@
-.post-container {
+/* .post-container {
     width: 604px;
     display: flex;
     flex-direction: column;
     margin: 20px auto;
-  }
+  } */
 
   .post {
     border: 1px solid #ebe7e7;
@@ -64,7 +64,7 @@
     outline: none;
   }
 
-  .logo {
+   .logo {
     width: 28px;
     height: 28px;
     margin-top: 12px;
@@ -73,4 +73,4 @@
 
   .logo:hover {
     cursor: pointer;
-  }
+  } 

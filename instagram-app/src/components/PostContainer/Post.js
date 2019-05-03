@@ -3,8 +3,9 @@ import './PostContainer.css';
 import CommentSection from '../CommentSection/CommentSection';
 import Proptypes from 'prop-types';
 import './PostContainer.css';
+import styled from 'styled-components';
 
-class Post extends React.Component {
+class Post extends React.Component {S
   constructor(props) {
   super(props);
   this.props = props;
@@ -24,6 +25,7 @@ class Post extends React.Component {
     })
     console.log(this.state)
   }
+  
 
 
 render(){
